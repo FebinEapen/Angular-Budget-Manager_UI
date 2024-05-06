@@ -1,0 +1,140 @@
+PASSWORD for budget-planner source code 
+      Budget@2024 
+
+> ng new planner 
+SCSS 
+y
+> cd planner 
+> ng serve 
+  (4200)
+
+> src > app > app.component.html 
+                 <router-outlet>
+                 </router-outlet> 
+
+febin@Catalina-Air app % ng g m budget-planner --routing 
+
+cd budget-planner
+ > ng g c login   
+
+ reuse lazy loading 
+    in app.routes.ts 
+
+TEST -1 
+7:15 console TEST - passed (login works!) with
+http://localhost:4200/budget-planner/login    
+
+9:55 make 2 forms in login.component.ts  
+            1. login form (email+password)
+            2. register form (username) 
+     initialise ngOnInit() 
+
+
+13:10
+      imports: [ReactiveFormsModule, CommonModule], in login.component.ts  
+
+14:55 > febin@Catalina-Air app % 
+      >pwd = app 
+      npm install --save @angular/material  
+      import {MatIconModule} from '@angular/material/icon';  
+
+      TEST 2
+19:00 ng serve 
+      login page appears 
+
+20:00 TEST 3 
+      console test 
+      username & password is passed to console 
+
+21:30 side bar component      
+
+      create a side-nav component 
+      > budget-planner > ng g c side-nav  
+      (side-nav folder will be created adjacent to the login folder)     
+
+      In budget-planner-routing-module.ts, add 
+       {path: 'side-nav',component:SideNavComponent}  
+    
+24:00 ('Couldnt find angular core theme')  
+      26:15 navbar icon absent... 
+         ... icon still absent but navbar & toggle seems to work from 29:20! 
+
+29:20 router defined 
+      route test 
+      
+      http://localhost:4200/budget-planner/side-nav (Works!) 
+      http://localhost:4200/budget-planner/login    (Works!)
+      side-nav toggle works!  
+
+30:30 Dashboard component 
+      > budget-planner > ng g c dashboard 
+
+      In budget-planner-routing-module.ts, add 
+       {path: 'dashboard',component:DashboardComponent} 
+
+41:50 Income card + Expense card done 
+      Both cards are working! 
+
+45:50 Todo card + Transaction card done 
+      Both cards are working! 
+
+47:10 Income component 
+      > budget-planner > ng g c income 
+
+      add path in budget-planner-routing-module.ts
+ 
+01:02:00
+01:06:40 checked and working (type missed) 
+      
+      Income page dropdowns are working  
+      Save & Back button working  
+
+PASSWORD for budget-planner source code 
+      Budget@2024   
+
+01:07:30 Expense & todo components  
+      
+      > budget-planner > ng g c expense 
+      > budget-planner > ng g c todo 
+
+01:10 expense html
+      expense ts 
+01:11:10  Expense component working! 
+
+01:12:00  Todo  html 
+          01:13:00 todo ts  
+
+          Error fixed - declared property toggleSelection 
+
+        Todo component working except for strikeout!  
+
+01:15:40 Transaction History 
+         > budget-planner > ng g c history 
+         history html, ts, scss 
+         add route in routing module  
+01:18:50 History component works!!
+
+01:20:00 Profile component 
+         > budget-planner > ng g c profile  
+
+         1:25
+
+      
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    
